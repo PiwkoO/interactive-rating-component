@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution on frontendmentor.io]()
-- [Live preview]()
+- [Solution on frontendmentor.io](https://www.frontendmentor.io/solutions/interactive-rating-component-tMRRuvJ0mb)
+- [Live preview](https://piwkoo.github.io/interactive-rating-component/)
 
 ## My process
 
