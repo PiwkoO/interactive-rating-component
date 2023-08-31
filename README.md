@@ -12,10 +12,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,7 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Project preview](./design/project-preview.png)
+![Preview rating component](design/preview-rating-component.png)
+![Preview feedback component](design/preview-feedback-component.png)
 
 ### Links
 
@@ -44,50 +42,33 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- CSS Animations
 - Mobile-first workflow
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- BEM methodology
+- JavaScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project was fun from few different points of view. First of all it was nice to connect **block** classes in BEM so, I could style it independently. 
 
-To see how you can add code snippets, see below:
+Second of all animations! Everyone loves it, and it improves User Experience so, that's definitely something I can focus on in the future. I don't do it often and what comes with it at the beginning it's like building something with LEGO bricks and see what's going to happen. Overall, a lot of fun!
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+Third and last thing is getting value from form using JavaScript. I didn't want to just get checked element so, I did a research and found *FormData* constructor which came handy. It's always good to get to know different approaches of same functionality.
+
+Below you can see few lines of code which helped with animating these components. Not really a skyrocket science, but if someone didn't know about *animationend* then there you go:
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+rating.addEventListener('animationend', () => {
+  rating.classList.remove('rating--visible')
+  feedback.classList.add('feedback--visible');
+});
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I had a chance to add animations here, but I don't do very often because mostly I create business applications. I would love to focus more on adding motion in project to become more comfortable when using it.
 
 ## Author
 
 - Github - [@PiwkoO](https://github.com/PiwkoO)
 - Frontend Mentor - [@PiwkoO](https://www.frontendmentor.io/profile/PiwkoO)
-itter - [@yourusername](https://www.twitter.com/yourusername)
